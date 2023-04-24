@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "37c1562e-bf26-44e3-831d-d93ecfcf0a5b",
+		"name": "LaraTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16135322"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jay@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "jay",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "bhuva",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jay@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDkyYTQyNmMxNWM2M2I1MzAzMWJhNTQxNzU1YTAwY2Y4N2M0NjVmYzU0OTYyZjViNWVjMDFkNTA4YTQ3MzU4ZjAxNDgzOTlkNWZkOTAyODMiLCJpYXQiOjE2ODE5MDU2MTguMDMwMDM2LCJuYmYiOjE2ODE5MDU2MTguMDMwMDQ2LCJleHAiOjE3MTM1MjgwMTguMDE3MDcsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.lOrXRVXTXzq45cNmTODqAoaOUq9KdV4wWgB_hTrwTBIJ2uaAdrVJfMH1JDxD8grVhxfqEo-NhR--Zb4mJcMLbevPPPQJgle40RFdoxinZb_jRm1gu7f8x8rQ1KOFamU_ZRLTlgg8CmqlsWgiPNq4iiW-VVoxkbVrsSIKO3h6H4RrONN0RIL9NQJO2ZXhPFsMQOpflN_lMmpbp7xa-8UBGAfyfeT1kz42C-DqUVgsseG_r1kqXbd42CZkv2WC61EzN0x0Nlv7ysSz557cRYbxDPR-HjqnuC0OTLn0r9BZzUrQeh60QJs0fAcA1QgJmclIsHrKF32aDswTROXP5WqHtZUCNRxpsbQEWFgu03WW2IhPLpfg-bKNNG66JK57j-z7Qx90JUYkId5YgvtKorc8njgZjUsZVL-7yPHX1RONWPoDj0ZEJ0EkT7BQmpODPVXRrqHEky8xmXcITu4PZLp7ewlMLj9asctCjunF8qvxacwpDi--smfUwbjqiRfr4WZOwa7BUqoSD0WFicIFtX_aGoGYDyBa7p3Qe9H9-W9__I9WnxN5SOoQtw_kohZ09cIuFy8cSG-KCkkkTumah35bZBZyJEyAO3bmYPiyAwf_9YjCr3U4yhP9nMIuvvx4JMiU8rUdGtgA1X9j1eRctYQwbV_cdnZsSVyW5NeVOc_KDBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/category",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDkyYTQyNmMxNWM2M2I1MzAzMWJhNTQxNzU1YTAwY2Y4N2M0NjVmYzU0OTYyZjViNWVjMDFkNTA4YTQ3MzU4ZjAxNDgzOTlkNWZkOTAyODMiLCJpYXQiOjE2ODE5MDU2MTguMDMwMDM2LCJuYmYiOjE2ODE5MDU2MTguMDMwMDQ2LCJleHAiOjE3MTM1MjgwMTguMDE3MDcsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.lOrXRVXTXzq45cNmTODqAoaOUq9KdV4wWgB_hTrwTBIJ2uaAdrVJfMH1JDxD8grVhxfqEo-NhR--Zb4mJcMLbevPPPQJgle40RFdoxinZb_jRm1gu7f8x8rQ1KOFamU_ZRLTlgg8CmqlsWgiPNq4iiW-VVoxkbVrsSIKO3h6H4RrONN0RIL9NQJO2ZXhPFsMQOpflN_lMmpbp7xa-8UBGAfyfeT1kz42C-DqUVgsseG_r1kqXbd42CZkv2WC61EzN0x0Nlv7ysSz557cRYbxDPR-HjqnuC0OTLn0r9BZzUrQeh60QJs0fAcA1QgJmclIsHrKF32aDswTROXP5WqHtZUCNRxpsbQEWFgu03WW2IhPLpfg-bKNNG66JK57j-z7Qx90JUYkId5YgvtKorc8njgZjUsZVL-7yPHX1RONWPoDj0ZEJ0EkT7BQmpODPVXRrqHEky8xmXcITu4PZLp7ewlMLj9asctCjunF8qvxacwpDi--smfUwbjqiRfr4WZOwa7BUqoSD0WFicIFtX_aGoGYDyBa7p3Qe9H9-W9__I9WnxN5SOoQtw_kohZ09cIuFy8cSG-KCkkkTumah35bZBZyJEyAO3bmYPiyAwf_9YjCr3U4yhP9nMIuvvx4JMiU8rUdGtgA1X9j1eRctYQwbV_cdnZsSVyW5NeVOc_KDBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/product",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDkyYTQyNmMxNWM2M2I1MzAzMWJhNTQxNzU1YTAwY2Y4N2M0NjVmYzU0OTYyZjViNWVjMDFkNTA4YTQ3MzU4ZjAxNDgzOTlkNWZkOTAyODMiLCJpYXQiOjE2ODE5MDU2MTguMDMwMDM2LCJuYmYiOjE2ODE5MDU2MTguMDMwMDQ2LCJleHAiOjE3MTM1MjgwMTguMDE3MDcsInN1YiI6IjUiLCJzY29wZXMiOltdfQ.lOrXRVXTXzq45cNmTODqAoaOUq9KdV4wWgB_hTrwTBIJ2uaAdrVJfMH1JDxD8grVhxfqEo-NhR--Zb4mJcMLbevPPPQJgle40RFdoxinZb_jRm1gu7f8x8rQ1KOFamU_ZRLTlgg8CmqlsWgiPNq4iiW-VVoxkbVrsSIKO3h6H4RrONN0RIL9NQJO2ZXhPFsMQOpflN_lMmpbp7xa-8UBGAfyfeT1kz42C-DqUVgsseG_r1kqXbd42CZkv2WC61EzN0x0Nlv7ysSz557cRYbxDPR-HjqnuC0OTLn0r9BZzUrQeh60QJs0fAcA1QgJmclIsHrKF32aDswTROXP5WqHtZUCNRxpsbQEWFgu03WW2IhPLpfg-bKNNG66JK57j-z7Qx90JUYkId5YgvtKorc8njgZjUsZVL-7yPHX1RONWPoDj0ZEJ0EkT7BQmpODPVXRrqHEky8xmXcITu4PZLp7ewlMLj9asctCjunF8qvxacwpDi--smfUwbjqiRfr4WZOwa7BUqoSD0WFicIFtX_aGoGYDyBa7p3Qe9H9-W9__I9WnxN5SOoQtw_kohZ09cIuFy8cSG-KCkkkTumah35bZBZyJEyAO3bmYPiyAwf_9YjCr3U4yhP9nMIuvvx4JMiU8rUdGtgA1X9j1eRctYQwbV_cdnZsSVyW5NeVOc_KDBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/search-product",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"search-product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
